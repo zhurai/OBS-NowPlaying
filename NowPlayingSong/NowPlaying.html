@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function pullData()
+{
+    const website="https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=zhurai&api_key=TOBEDONE&format=json&limit=1"
+    fetch(website)
+    .then((response) => {
+        if (!response.ok){
+            throw new Error("Unable to Find Tracks")
+        }
+        return response.json();
+    })
+    .then((json) => showSong(json));
+}
+
+function showSong(json)
+{
+    document.body.innerHTML = "";
+    document.write(json.recenttracks.track[0].name)
+    document.write(" by " + json.recenttracks.track[0].artist['#text'])
+}
+
+const interval = setInterval(function() {
+    pullData()
+},45000);
+
+pullData()
+</script>
+</body>
+</html>
