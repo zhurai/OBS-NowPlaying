@@ -3,5 +3,7 @@
 }
 
 #song, #by, #artist {
+    color: white;
+    background-color: #570A57;
     display: inline;
 }
