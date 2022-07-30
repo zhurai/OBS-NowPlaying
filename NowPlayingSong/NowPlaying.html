@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta http-equiv="refresh" content="30">
         <script src="./config.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -21,19 +22,20 @@
             function showSong(json)
             {
                 document.getElementById("song").innerHTML = json.recenttracks.track[0].name;
+                document.getElementById("by").innerHTML = "by";
                 document.getElementById("artist").innerHTML = json.recenttracks.track[0].artist['#text'];
+                document.getElementById("from").innerHTML = "from";
+                document.getElementById("album").innerHTML = json.recenttracks.track[0].album['#text'];
             }
-
-            const interval = setInterval(function() {
-                pullData()
-            },30000);
             
             pullData(config.LastfmUsername,config.LastfmApiKey)
         </script>
         <div id="container">
-            <div id="song">test</div> 
-            <div id="by">by</div> 
-            <div id="artist">test</div>
+            <div id="song"></div> 
+            <div id="by"></div> 
+            <div id="artist"></div>
+            <div id="from"></div> 
+            <div id="album"></div>
         </div>
     </body>
 </html>

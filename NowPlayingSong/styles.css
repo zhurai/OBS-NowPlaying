@@ -2,8 +2,15 @@
     text-align: left;
 }
 
-#song, #by, #artist {
+* {
     color: white;
     background-color: #570A57;
+}
+
+#song, #by, #artist {
+    display: inline;
+}
+
+#from, #album {
     display: inline;
 }
