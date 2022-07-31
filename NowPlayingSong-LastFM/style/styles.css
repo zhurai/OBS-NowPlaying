@@ -1,0 +1,47 @@
+#root {
+    text-align: center;
+    padding: 5px;
+    background-color: #570A57;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 128px 1fr;
+    font-family: "Roboto", "Sans-Serif";
+}
+
+#part1 {
+    padding: 5px;
+} 
+
+#artcontainer {
+    text-align: center;
+}
+
+#part2 {
+    padding: 3px;
+}
+
+#textcontainer1 {
+    text-align: center;
+}
+
+#textcontainer2 {
+    text-align: left;
+}
+
+#textcontainer3 {
+    text-align: left;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-size: 20vh;
+}
+
+#song, #by, #artist {
+    display: inline;
+}
+
+#from, #album {
+    display: inline;
+}
