@@ -24,5 +24,5 @@ $(document).ready(function()
 {
     setInterval(function() {
         pullData(config.LastfmUsername,config.LastfmApiKey)
-    }, 1000);
+    }, config.Interval);
 });

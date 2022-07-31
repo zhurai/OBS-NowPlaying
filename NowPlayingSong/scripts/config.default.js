@@ -1,4 +1,5 @@
 const config = {
     "LastfmApiKey": "",
-    "LastfmUsername": ""
+    "LastfmUsername": "",
+    "Interval": 1000
 }
