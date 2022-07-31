@@ -1,24 +1,40 @@
-#container0 {
+#root {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: #570A57;
-    border-radius: 5px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 128px 1fr;
 }
 
-#container0 {
+#part1 {
+    padding: 5px;
+} 
+
+#artcontainer {
     text-align: center;
-    padding: 10px;
 }
 
-#container2 {
+#part2 {
+    padding: 3px;
+}
+
+#textcontainer1 {
     text-align: center;
-    padding: 10px;
+}
+
+#textcontainer2 {
+    text-align: left;
+}
+
+#textcontainer3 {
+    text-align: left;
 }
 
 body {
     color: white;
     background-color: black;
-    font-size: 25vh;
+    font-size: 20vh;
 }
 
 #song, #by, #artist {
