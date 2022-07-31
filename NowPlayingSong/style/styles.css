@@ -5,6 +5,7 @@
     border-radius: 30px;
     display: grid;
     grid-template-columns: 128px 1fr;
+    font-family: "Roboto", "Sans-Serif";
 }
 
 #part1 {
