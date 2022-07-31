@@ -1,14 +1,23 @@
-#container1 {
-    text-align: left;
+#container0 {
+    text-align: center;
+    padding: 10px;
+    background-color: #570A57;
+    border-radius: 5px;
+}
+
+#container0 {
+    text-align: center;
+    padding: 10px;
 }
 
 #container2 {
-    text-align: left;
+    text-align: center;
+    padding: 10px;
 }
 
-* {
+body {
     color: white;
-    background-color: #570A57;
+    background-color: black;
     font-size: 25vh;
 }
 
